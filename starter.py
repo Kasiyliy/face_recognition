@@ -132,7 +132,7 @@ def handle_start(message):
 
 @bot.message_handler(content_types=["text"])
 def handle_all_text(message):
-    if(message.text.lower() == "привет"):
+    if(message.text.lower() is "привет"):
         bot.send_message(message.chat.id , "Привет ! Я бот Кася")
     elif (message.text.lower() == "пошел"):
         bot.send_message(message.chat.id, "Ты?!!")
