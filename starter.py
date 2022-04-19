@@ -3,6 +3,7 @@ import test
 from models.faces import Faces
 import telebot
 import os
+import os.path
 
 TOKEN = '470340551:AAHWbCr5tRh4Eo8zNL8iDaUJ-_nOVBGwMQ8' # токен вашего бота, полученный от @BotFather
 
@@ -42,6 +43,10 @@ def recognize(image):
         if(NO_FACES == 1):
             break
         global NAME
+
+        if(os.path.exists(path)):
+            continue
+
         if( find(image , path)):
 
             NAME = (test.getNameByPath(path))
@@ -61,7 +66,8 @@ def getImagePathById(message):
     try:
         with open(path, 'wb') as new_file:
             new_file.write(downloaded_file)
-        print(path)
+        if not os.path.exists(path):
+            return None
         image = face_recognition.load_image_file(path)
         if countFaces( image ) == 1 :
             return path
