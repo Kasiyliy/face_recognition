@@ -60,7 +60,7 @@ def recognize(image):
 
 def getImagePathById(message):
     raw = message.photo[-1].file_id
-    path = '/pictures/' + raw + ".jpg"
+    path = raw + ".jpg"
     file_info = bot.get_file(raw)
     downloaded_file = bot.download_file(file_info.file_path)
     try:
