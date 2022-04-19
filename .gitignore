@@ -78,3 +78,4 @@ fabric.properties
 /face_recognition.iml
 /.gradle/
 /.idea/
+/venv/
