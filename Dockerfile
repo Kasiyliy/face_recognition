@@ -1,4 +1,5 @@
-FROM orgoro/dlib-opencv-python:3.7
+FROM FROM digi0ps/python-opencv
+
 
 RUN mkdir /face_recognition
 COPY ./ /face_recognition
@@ -11,4 +12,4 @@ RUN pip install face_recognition
 RUN pip install pyTelegramBotAPI
 RUN pip install --upgrade pyTelegramBotAPI
 
-ENTRYPOINT ["tail", "-f", "/dev/null"]
+CMD ["python", "starter.py"]
