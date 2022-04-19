@@ -1,4 +1,4 @@
-FROM FROM digi0ps/python-opencv
+FROM digi0ps/python-opencv
 
 
 RUN mkdir /face_recognition
