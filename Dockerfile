@@ -5,8 +5,6 @@ COPY ./ /face_recognition
 
 WORKDIR /face_recognition
 
-RUN mkdir /pictures
-
 RUN pip install face_recognition
 RUN pip install pyTelegramBotAPI
 RUN pip install --upgrade pyTelegramBotAPI
