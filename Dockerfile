@@ -11,4 +11,4 @@ RUN pip3 install face_recognition
 RUN pip3 install pyTelegramBotAPI
 RUN pip3 install --upgrade pyTelegramBotAPI
 
-CMD ["python3", "starter.py"]
+CMD ["python", "starter.py"]
