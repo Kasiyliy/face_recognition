@@ -8,8 +8,8 @@ WORKDIR /face_recognition
 
 RUN mkdir /pictures
 
-RUN pip install face_recognition
-RUN pip install pyTelegramBotAPI
-RUN pip install --upgrade pyTelegramBotAPI
+RUN pip3 install face_recognition
+RUN pip3 install pyTelegramBotAPI
+RUN pip3 install --upgrade pyTelegramBotAPI
 
 CMD ["python", "starter.py"]
