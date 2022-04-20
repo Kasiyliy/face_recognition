@@ -1,4 +1,4 @@
-FROM digi0ps/python-opencv
+FROM m03geek/opencv-dlib:alpine-19.8
 
 
 RUN mkdir /face_recognition
