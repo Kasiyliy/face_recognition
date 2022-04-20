@@ -1,4 +1,4 @@
-FROM m03geek/opencv-dlib:alpine-19.8
+FROM jhonatans01/python-dlib-opencv:latest
 
 
 RUN mkdir /face_recognition
@@ -8,8 +8,8 @@ WORKDIR /face_recognition
 
 RUN mkdir /pictures
 
-RUN pip3 install face_recognition
-RUN pip3 install pyTelegramBotAPI
-RUN pip3 install --upgrade pyTelegramBotAPI
+RUN pip install face_recognition
+RUN pip install pyTelegramBotAPI
+RUN pip install --upgrade pyTelegramBotAPI
 
 CMD ["python", "starter.py"]
