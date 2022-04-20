@@ -1,4 +1,4 @@
-FROM jhonatans01/python-dlib-opencv:latest
+FROM andierabino/heroku-python3-opencv-dlib:latest
 
 
 RUN mkdir /face_recognition
