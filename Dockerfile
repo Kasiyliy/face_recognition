@@ -1,4 +1,4 @@
-FROM andierabino/heroku-python3-opencv-dlib:latest
+FROM webforgelabs/dlib
 
 
 RUN mkdir /face_recognition
