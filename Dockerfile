@@ -1,4 +1,4 @@
-FROM webforgelabs/dlib:latest
+FROM hadib/dlib:latest
 
 
 RUN mkdir /face_recognition
